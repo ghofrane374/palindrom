@@ -1,0 +1,23 @@
+FUNCTION palindrom(ch:STRING,deb:INTEGER,fin:INTEGER) : BOOLEAN
+VAR
+    
+BEGIN
+   IF (deb=fin) THEN
+       return true
+   END_IF
+   IF (ch[deb]<>ch[fin]) THEN
+       return false
+   END_IF
+   IF
+   palindrom(ch,deb+2,fin-1)
+   END_IF
+END
+ALGORITHM algorithm_name
+VAR
+   word:STRING
+BEGIN
+  IF (palidrom(word,0,word.length-1)=true) THEN
+      write("the word is palindrom")
+  END_IF
+END
+
